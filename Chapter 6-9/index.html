@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter 6-9</title>
+</head>
+<body>
+    
+
+
+<style>
+  table {
+    border-collapse: collapse;
+    border: 1px solid black;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #f0c4c4;
+  }
+  h1, h4{
+    text-align: center;
+  }
+</style>
+</head>
+<body>
+  <script src="./app.js"></script>
+<script>
+  let subject1 = prompt("Enter Subject Name for Subject 1");
+  let subject2 = prompt("Enter Subject Name for Subject 2");
+  let subject3 = prompt("Enter Subject Name for Subject 3");
+  
+  let subject1Marks = +prompt("Enter Obtained Marks for Subject 1 out of 100");
+  let subject2Marks = +prompt("Enter Obtained Marks for Subject 2 out of 100");
+  let subject3Marks = +prompt("Enter Obtained Marks for Subject 3 out of 100");
+  
+  let totalMarks = 100;
+  
+  // Calculate percentages
+  let percentagesubject1 = (subject1Marks / totalMarks * 100).toFixed(2);
+  let percentagesubject2 = (subject2Marks / totalMarks * 100).toFixed(2);
+  let percentagesubject3 = (subject3Marks / totalMarks * 100).toFixed(2);
+  
+  // Calculate total obtained marks and overall percentage
+  let tottotal = 300;
+  let obttotal = subject1Marks + subject2Marks + subject3Marks;
+  let totPercentage = (obttotal / tottotal * 100).toFixed(2);
+
+  // Display the table
+  document.write(`<h1>Student's Marksheet</h1>
+  <h4>Three Subjects Record</h4><hr>
+  <table>
+    <tr>
+      <th>Subject</th>
+      <th>Total Marks</th>
+      <th>Obtained Marks</th>
+      <th>Percentage</th>
+    </tr>
+    <tr>
+      <td>${subject1}</td>
+      <td>${totalMarks}</td>
+      <td>${subject1Marks}</td>
+      <td>${percentagesubject1}%</td>
+    </tr>
+    <tr>
+      <td>${subject2}</td>
+      <td>${totalMarks}</td>
+      <td>${subject2Marks}</td>
+      <td>${percentagesubject2}%</td>
+    </tr>
+    <tr>
+      <td>${subject3}</td>
+      <td>${totalMarks}</td>
+      <td>${subject3Marks}</td>
+      <td>${percentagesubject3}%</td>
+    </tr>
+    <tr>
+      <td><b>Total</b></td>
+      <td><b>${tottotal}</b></td>
+      <td><b>${obttotal}</b></td>
+      <td><b>${totPercentage}%</b></td>
+    </tr>
+  </table>`);
+</script>
+
+</body>
+</html>
