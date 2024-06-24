@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+/* index page styling start */
+.main-container{
+    background-color: #212832;
+    margin: auto;
+    width: 35%;
+    height: 100vh;
+}
+.logo1{
+    padding-left: 10px;
+}
+.task{
+    height: 50%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    display: block;
+    margin: 0 auto;
+}
+.text{
+    font-size: 40px;
+    padding: 0px 10px;
+    color: aliceblue;
+    margin-top: 10px;
+}
+.textYellow{
+    color: #FED36A;
+}
+.button {
+    padding: 20px;
+    background-color: #FED36A;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #FFC857;
+}
+/* index page styling end */
+
+/* login page styling start */
+.logo2{
+    display: block;
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 25%;
+    width: 25%;
+}
+.main-container1{
+    background-color: #212832;
+    margin: auto;
+    width: 35%;
+    height: 100vh;
+}
+.button1{
+    padding: 20px;
+    background-color: #FED36A;
+    color: black;
+    font-weight: 600;
+    font-size: 20px;
+    width: 100%;
+    margin-top: 16%;
+    cursor: pointer;
+}
+.button1:hover {
+    background-color: #FFC857;
+}
+
+h1{
+    text-align: center;
+    color: aliceblue;
+}
+p{
+    color: aliceblue;
+    padding: 0px 50px;
+}
+input{
+    margin: 5px;
+    padding: 5px;
+    width: 75%;
+    outline: none;
+    border: none;
+}
+.validation{
+    margin: 50px 0px;
+}
+.display{
+    margin: 5px 50px;
+    /* width: 75%; */
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#eye{
+    padding: 5px;
+}
+#error{
+    color: red;
+}
+.welcomebody{
+    background-color: #fff;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.success{
+    color: rgb(0, 192, 0);
+}
+.main-container, .main-container1 {
+    background-color: #212832;
+    margin: auto;
+    width: 80%; /* Adjust width for smaller screens */
+    max-width: 600px; /* Limit maximum width */
+    height: 100vh;
+    padding: 20px; /* Add padding for spacing */
+}
+.fa-eye-slash, .fa-eye{
+    color: #a7a7a7;
+}

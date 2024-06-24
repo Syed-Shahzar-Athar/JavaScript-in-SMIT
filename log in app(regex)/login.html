@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="main-container1">
+        <div class="logo">
+            <img class="logo2" src="./images/logo.png" alt=""><br>
+        </div>
+        <div class="content">
+            <h1>Welcome Back</h1>
+            <div class="validation">
+                <p>Email Address</p>
+                <div class="display"><input class="email" type="text" id="email" placeholder="enter email here"></div><br>
+                <p>Password</p>
+                <div class="display"><input class="p-2 w-100" type="password" id="password" placeholder="enter password here"><i id="eye" onclick="hiddenPassword()" class="fa-solid fa-eye-slash"></i></div>
+                <p id="error"></p>
+                <button class="button1" onclick="loginForm()">Log In</button>
+            </div>
+         </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
