@@ -1,0 +1,129 @@
+@font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto;
+}
+.ml-auto{
+    margin-left: auto;
+}
+:root{
+    --primary-color: #FCC822;
+    --secondary-color: #333333;
+    --white-color: #fff;
+}
+/* index styling */
+.ml-auto{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.btn{
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    padding: 5px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline-color: var(--primary-color);
+    outline-style: solid;
+}
+.login-btn{
+    background-color: var(--white-color); 
+    color: var(--primary-color); 
+}
+.login-btn:hover{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.signup-btn{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+}
+.signup-btn:hover{
+    background-color: var(--white-color);
+    color: var(--primary-color);
+}
+.text-container{
+    padding: 80px;
+    width: 50%;
+    text-align: left;
+}
+.new-signup{
+    margin: 20px 0px;
+}
+.text-container h1{
+    font-weight: 700;
+    font-size: 45px;
+}
+.text-container span{
+    padding: 30px 0px;
+    line-height: 70px;
+    color: #828282;
+}
+.btnn{
+    color: var(--primary-color);
+    margin: 0px 50px;
+    background-color: var(--white-color);
+    outline: none;
+    border: none;
+}
+.image-container {
+    width: 45%;
+}
+/* index styling */
+
+/* signup styling */
+.text-container input{
+    width: 150%;
+    padding: 5px;
+    margin: 10px;
+}
+.text-container label{
+    padding: 0px 10px;
+}
+.text-container h2{
+    text-align: center;
+    color: #828282;
+}
+.signup-logo{
+    padding: 0px 150px;
+}
+.welcome{
+    padding: 10px 200px;    
+}
+/* signup styling */
+
+/* login styling */
+
+.text-container h5{
+    text-align: center;
+    color: #828282;
+    padding: 10px ;
+}
+/* login styling */
+
+/* dashboard styling */
+.user-btn{
+    border: none;
+    cursor: pointer;
+    border-radius: 0%;
+    padding: 5px 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--primary-color);
+}
+.dashboard-trial{
+    margin-left: 10px;
+}
+#error{
+    color: red;
+}
