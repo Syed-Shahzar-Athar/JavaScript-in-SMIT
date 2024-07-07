@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Pakistan</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Main Section -->
+    <div class="header-wrapper">
+        <!-- Header Area -->
+        <nav class="header-area">
+            <div class="logo-wrapper">
+                <img src="./Images/Netflix_2015_logo.svg" alt="Netflix Logo">
+            </div>
+            <div class="btn-wrapper">
+                <a href="#">Sign In</a>
+            </div>
+        </nav>
+        <!-- Header Area Close -->
+        
+        <!-- Content Area -->
+        <div class="content-wrapper">
+            <h1>Unlimited movies, TV shows, and more</h1>
+            <h3>Watch anywhere. Cancel anytime.</h3>
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <form class="email-signup">
+                <input type="email" placeholder="Email address" required>
+                <button type="submit">Get Started <span><i class="fas fa-chevron-right"></i></span></button>
+            </form>
+        </div>
+        <!-- Content Area Close -->
+    </div>
+    <div class="bg-gray"></div>
+    <!-- Main Section Close -->
+
+    <!-- Features -->
+    <section class="mainTV-section">
+        <div class="container">
+            <div class="row content-flexing">
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-content">
+                    <h1>Enjoy on your TV</h1>
+                    <h3>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-image" style="position: relative;">
+                    <img src="./Images/tv.png" alt="Watch on TV" style="width: 100%; height: auto;"> <!-- Existing image -->
+                
+                    <!-- Video overlay -->
+                    <div class="video-overlay">
+                        <video autoplay playsinline muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gray"></div>
+
+    <section class="mainTV-section">
+        <div class="container">
+            <div class="row content-flexing">
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-image">
+                    <img src="./Images/mobile-0819.jpg" alt="Download shows">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-content">
+                    <h1>Download your shows to watch offline</h1>
+                    <h3>Save your favorites easily and always have something to watch.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gray"></div>
+
+    <section class="mainTV-section">
+        <div class="container">
+            <div class="row content-flexing">
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-content">
+                    <h1>Watch everywhere</h1>
+                    <h3>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h3>
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-image" style="position: relative;">
+                    <img src="./Images/tv.png" alt="Watch on TV" style="width: 100%; height: auto;"> <!-- Existing image -->
+                
+                    <!-- Video overlay -->
+                    <div class="video-overlay">
+                        <video autoplay playsinline muted loop style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+                            <source src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gray"></div>
+
+    <section class="mainTV-section">
+        <div class="container">
+            <div class="row content-flexing">
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-image">
+                    <img src="./Images/AAAABejKYujIIDQciqmGJJ8BtXkYKKTi5jiqexltvN1YmvXYIfX8B9CYwooUSIzOKneblRFthZAFsYLMgKMyNfeHwk16DmEkpIIcb6A3.png" alt="Create profiles for kids">
+                </div>
+                <div class="col-lg-6 col-md-6 col-sm-12 tv-content">
+                    <h1>Create profiles for kids</h1>
+                    <h3>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gray"></div>
+    <!-- Features Close -->
+
+    <!-- FAQs -->
+    <section class="faq">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h1>Frequently Asked Questions</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="all-faq" onclick="toggleFAQ(this)">
+                        <ul>
+                            <li>What is Netflix?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                        <div class="faq-answer">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries, and more on thousands of internet-connected devices.</p>
+                            <p>You can watch as much as you want, whenever you want without a single commercial – all for one low monthly price. There's always something new to discover and new TV shows and movies are added every week!</p>
+                        </div>
+                    </div>
+                    <div class="all-faq">
+                        <ul>
+                            <li>How much does Netflix cost?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                    </div>
+                    <div class="all-faq">
+                        <ul>
+                            <li>How can I watch?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                    </div>
+                    <div class="all-faq">
+                        <ul>
+                            <li>How do I cancel?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                    </div>
+                    <div class="all-faq">
+                        <ul>
+                            <li>What can I watch on Netflix?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                    </div>
+                    <div class="all-faq">
+                        <ul>
+                            <li>Is Netflix good for kids?</li>
+                            <li><i class="fas fa-plus"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FAQs Close -->
+
+    <!-- Newsletter -->
+    <section class="letter-text">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                    <form class="email-signup">
+                        <input type="email" placeholder="Email address" required>
+                        <button type="submit">Get Started <span><i class="fas fa-chevron-right"></i></span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-gray"></div>
+    
+    <!-- footer -->
+     <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-3 col-lg-3 col-md-6 footer">
+                    <br><p><a href="">Questions? Contact us.</a></p><br>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Investor Relations</a></li>
+                        <li><a href="">Privacy</a></li>
+                        <li><a href="">Speed Test</a></li>
+                    </ul>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-language"></i>  Language
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                          <li><a class="dropdown-item" href="#">English</a></li>
+                          <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </div><br>
+                    <p><a href="">Netflix Pakistan</a></p>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 footer">
+                    <br><ul>
+                        <br><br><li><a href="">Help Center</a></li>
+                        <li><a href="">Jobs</a></li>
+                        <li><a href="">Cookie Preferences</a></li>
+                        <li><a href="">Legal Notices</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 footer">
+                    <br><ul>
+                        <br><br><li><a href="">Account</a></li>
+                        <li><a href="">Ways to Watch</a></li>
+                        <li><a href="">Corporate Information</a></li>
+                        <li><a href="">Only on Netflix</a></li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-3 col-md-6 footer">
+                    <br><ul>
+                        <br><br></b><li><a href="">Media Center</a></li>
+                        <li><a href="">Terms of Use</a></li>
+                        <li><a href="">Contact Us</a></li>
+                        <li><a href="">Profile: Syed Shahzar</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+     </footer>
+    <!-- Newsletter Close -->
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</body>
+</html>

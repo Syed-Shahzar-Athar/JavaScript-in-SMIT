@@ -1,0 +1,244 @@
+@font-face {
+    font-family: Netflix-Regular;
+    src: url(./Fonts/NetflixSans-Regular.otf);
+}
+body {
+    font-family: 'Netflix-Regular', Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+.bg-gray{
+    background-color: #363636;
+    height: 5px;
+}
+.header-wrapper {
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('./Images/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+.header-area{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+}
+.header-area .logo-wrapper img {
+    height: 40px;
+}
+.btn-wrapper a {
+    background-color: #E50914;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-decoration: none;
+}
+.btn-wrapper a:hover {
+    background-color: #af0810;
+    transition: 0.2s;
+}
+.content-wrapper {
+    padding: 100px 20px;
+    text-align: center;
+}
+.content-wrapper h1 {
+    font-size: 45px;
+    font-weight: 800;
+    line-height: 1.2;
+    font-family: 'Netflix-bold', Arial, sans-serif;
+    margin-bottom: 20px;
+    padding-top: 30px;
+}
+.content-wrapper h3 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+.content-wrapper p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.email-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.email-signup input {
+    width: 350px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color:#2b2b2b8e;
+    outline: #696969 solid 1px;
+    color: #fff;
+}
+.email-signup button {
+    background-color: #E50914;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    padding: 15px 25px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+.email-signup button:hover {
+    background-color: #af0810;
+    transition: 0.2s;
+}
+.mainTV-section {
+    padding: 80px 20px;
+    display: flex;
+    align-items: center;
+}
+.content-flexing {
+    /* order: 2; */
+    display: flex;
+    align-items: center;
+}
+.tv-image img {
+    max-width: 100%;
+    height: auto;
+}
+.video-overlay {
+    position: absolute;
+    top: 0%;
+    left: 5%;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.video-overlay video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the video covers the entire space */
+    z-index: -1; /* Ensures the video is behind the image */
+}
+.tv-content h1{
+    font-weight: 800;
+    font-size: 45px;
+}
+.faq {
+    text-align: center;
+    padding: 80px 20px;
+}
+.faq h1 {
+    font-size: 45px;
+    font-weight: 800;
+    font-family: 'Netflix-bold', Arial, sans-serif;
+    margin-bottom: 40px;
+}
+.all-faq {
+    background-color: #363636;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    line-height: 2;
+}
+.all-faq:hover {
+    background-color: #5c5c5c;
+    transition: 0.3s;
+}
+.all-faq ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.all-faq li {
+    list-style-type: none;
+    font-size: 20px;
+}
+.letter-text {
+    text-align: center;
+    padding: 20px;
+}
+.footer p{
+    padding:  0px 30px;
+    margin: 0;
+    color: #bbbbbb;
+}
+.footer ul li{
+    list-style-type: none;
+    padding: 5px 0px;
+}
+.footer p a{
+    color: #bbbbbb;
+}
+.footer ul li a{
+    /* text-decoration: none; */
+    color: #bbbbbb;
+}
+.dropdown{
+    padding-left: 30px;
+}
+.dropdown a{
+    background-color: #1d1d1d;
+}
+.dropdown-menu{
+    background-color: #1d1d1d;
+}
+footer{
+    padding-bottom: 50px;
+}
+@media (max-width: 768px) {
+    .content-wrapper {
+        padding: 50px 10px;
+    }
+    .email-signup input {
+        width: 100%;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .email-signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    .email-signup button {
+        width: 60%;
+        font-size: 18px;
+    }
+    .mainTV-section {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* CSS for left-aligning FAQ answers */
+.all-faq {
+    cursor: pointer;
+    margin-bottom: 20px;
+
+}
+
+.faq-answer {
+    display: none; /* Initially hide answers */
+    margin-top: 20px;
+    border-top: 1px solid #000;
+    /* padding-left: 20px; */
+    text-align: left;
+    font-size: 20px; /* Adjust padding for better alignment */
+    line-height: 1.5;
+}
+
+
