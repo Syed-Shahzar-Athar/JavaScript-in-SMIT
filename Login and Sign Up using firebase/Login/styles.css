@@ -1,0 +1,29 @@
+body {
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient from blue to purple */
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form {
+    width: 50%;
+    background: rgba(255, 255, 255, 0.8); /* Optional: Add a semi-transparent background to the form */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.signuptext{
+    text-decoration: underline;
+
+}
+.btn{
+    background: linear-gradient(135deg, #4a00e0, #8e2de2); /* Gradient from blue to purple */
+    padding: 5px 20px;
+}
+.forgot{
+    text-decoration: underline;
+    color: #4a00e0;
+    cursor: pointer;
+}

@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-image: url(./Images/bg2.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 1;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Black shade with 50% opacity */
+    z-index: -1; /* Places the shade behind the content */
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    padding: 0px 20px;
+    font-weight: 500;
+}
+.header-wrapper nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    align-items: center;
+}
+.nav-items{
+    list-style-type: none;
+}
+.indexloginbtn{
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+}
+.indexloginbtn:hover{
+    transition: 0.5s;
+    background-color: #fff;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+
+
+/* Media Queries for Responsiveness */
+
+@media screen and (max-width: 1024px) {
+    .header-wrapper nav {
+        padding: 20px 30px;
+    }
+
+    a {
+        font-size: 18px;
+        padding: 0px 15px;
+    }
+
+    .indexloginbtn {
+        font-size: 18px;
+        padding: 8px 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .indexloginbtn {
+        font-size: 14px;
+        padding: 8px 15px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .header-wrapper nav {
+        flex-direction: column;
+    }
+
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    
+    .header-wrapper nav {
+        padding: 15px 20px;
+    }
+
+    a {
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .indexloginbtn {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    h1 {
+        font-size: 16px;
+    }
+}
